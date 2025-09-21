@@ -1,1 +1,1 @@
-/sbin/bash
+/bin/bash
