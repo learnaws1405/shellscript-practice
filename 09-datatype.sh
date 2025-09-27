@@ -10,3 +10,4 @@ echo "total SUM is : $SUM"
 LEADERS=("modi", "lincon", "bushh")
 
 echo "Number os leaders are ${LEADERS[0]}"
+echo "Number os leaders are ${LEADERS[1]}"
