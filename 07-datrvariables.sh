@@ -1,6 +1,7 @@
 #! /sbin/bash
 
 STARTDATE=$(date +%s)
+sleep 5
 ENDDATE=$(date +%s)
 
 TOTALTIME=$(($STARTDATE - $ENDDATE ))
