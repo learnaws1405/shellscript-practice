@@ -4,6 +4,6 @@ STARTDATE=$(date +%s)
 sleep 5
 ENDDATE=$(date +%s)
 
-TOTALTIME=$(($STARTDATE - $ENDDATE ))
+TOTALTIME=$(($ENDDATE - $STARTDATE ))
 
 echo "Total time to excute the script : $TOTALTIME"
