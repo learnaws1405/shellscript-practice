@@ -8,6 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 START_TIME=$(date +%s)
 END_TIME=$(date +%s)
+sleep 5
 TOTAL_TIME=$(($END_TIME - $START_TIME))
 
 echo "Staring installation process $(date)"
@@ -42,4 +43,4 @@ do
     fi
 done
 
-echo "Todal time excuted for installing services $TOTAL_TIME"
+echo "Total time excuted for installing services $TOTAL_TIME"
