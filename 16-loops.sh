@@ -6,11 +6,11 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-START_TIME=$(date +%s)
-END_TIME=$(date +%s)
+STARTDATE=$(date +%s)
 sleep 5
-echo "Sleeping for 5 sec"
-TOTAL_TIME=$(($END_TIME - $START_TIME))
+ENDDATE=$(date +%s)
+
+TOTALTIME=$(($ENDDATE - $STARTDATE ))
 
 echo "Staring installation process $(date)"
 
@@ -44,4 +44,4 @@ do
     fi
 done
 
-echo "Total time excuted for installing services $TOTAL_TIME"
+echo "Total time excuted for installing services $TOTALTIME"
