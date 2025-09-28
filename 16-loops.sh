@@ -6,6 +6,11 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
+START_TIME=$(date +%s)
+END_TIME=$(date +%s)
+TOTAL_TIME=$(($END_TIME - $END_TIME))
+
+echo "Staring installation process $(date)"
 
 LOG_FOLDER="/var/log/shell-script"
 SCRIPT_NAME="$(echo $0 | cut -d "." -f1)"
@@ -37,3 +42,4 @@ do
     fi
 done
 
+echo "Todal time excuted for installing services $TOTAL_TIME"
