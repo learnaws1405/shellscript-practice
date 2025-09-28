@@ -29,7 +29,7 @@ fi
 
 dnf install nginx -y
 if [ $? -ne 0 ]; then 
-    dnf install mysql -y
+    dnf install nginx -y
     VALIDATE "$?" "NGINX"
 else 
     echo -e "Already installed : $Y SKIPPING $N"
