@@ -21,9 +21,9 @@ fi
 
 VALIDATE(){
 if [ $1 -ne 0 ]; then 
- echo -e " $R Failure Install of $2 is FAILURE $N"
+ echo -e " Failure Install of $2 is $R FAILURE $N"
 else
- echo -e "$G Success Install of $2 is  SUCCESS $N"
+ echo -e " Success Install of $2 is  $G SUCCESS $N"
 fi
 }
 
