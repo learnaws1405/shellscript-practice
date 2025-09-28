@@ -7,19 +7,19 @@ if [ $USERID -ne 0 ]; then
 fi
 
 VALIDATE(){
-  if [$1 -ne 0]; then 
+if [ $1 -ne 0 ]; then 
     echo "FAILURE in $2 process"
     exit 1
-   else
+else
    echo "SUCCESS in $2 process" 
-  fi     
+fi     
 }
 
-dnf install mysql -y 
+dnf install mysqls -y 
 VALIDATE "$?" "MYSQL"
 
-dnf install ngnix -y 
+dnf install nginx -y 
 VALIDATE "$?" "NGNIX"
 
-dnf insall mongodv-mongosh -y
+dnf insall mongodb-mongoshx -y
 VALIDATE "$?" "MONGODB"
