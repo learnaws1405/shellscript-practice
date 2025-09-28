@@ -22,7 +22,7 @@ else
 fi
 }
 
-dnf list installed mysql
+dnf list installed mysqll
 if [ $? -ne 0 ]; then
     dnf install mysql -y
     VALIDATE "$?" "MYSQL"
