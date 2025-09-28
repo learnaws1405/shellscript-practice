@@ -28,7 +28,7 @@ fi
 
 for i in $@
 do
-    dnf list installed $i >>$LOG_FILE
+    dnf list installed $i &>>$LOG_FILE
     if [ $? -ne 0 ]; then 
         dnf install $i -y &>>$LOG_FILE
         VALIDATION "$?" "$i"
