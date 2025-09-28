@@ -28,7 +28,7 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y 
     VALIDATE "$?" "NGNIX"
 else 
-    echp "Already NGNIX installed"
+    ech0 "Already NGNIX installed"
 fi
 # dnf install python3 -y
 # VALIDATE "$?" "python3"
