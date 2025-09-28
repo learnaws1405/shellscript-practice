@@ -8,7 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 START_TIME=$(date +%s)
 END_TIME=$(date +%s)
-TOTAL_TIME=$(($END_TIME - $END_TIME))
+TOTAL_TIME=$(($END_TIME - $START_TIME))
 
 echo "Staring installation process $(date)"
 
