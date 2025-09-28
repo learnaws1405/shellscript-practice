@@ -7,7 +7,12 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 STARTDATE=$(date +%s)
-sleep 5
+for i in {1..10}
+do
+ echo $i
+ echo "Printing $i"
+done
+
 ENDDATE=$(date +%s)
 
 TOTALTIME=$(($ENDDATE - $STARTDATE ))
