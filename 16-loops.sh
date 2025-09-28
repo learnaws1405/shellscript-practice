@@ -26,7 +26,7 @@ fi
 
 }
 
-for i in install "$@"
+for i in  "$@"
 do
     dnf list installed $i
     if [ $? -ne 0 ]; then 
