@@ -9,6 +9,7 @@ N="\e[0m"
 START_TIME=$(date +%s)
 END_TIME=$(date +%s)
 sleep 5
+echo "Sleeping for 5 sec"
 TOTAL_TIME=$(($END_TIME - $START_TIME))
 
 echo "Staring installation process $(date)"
