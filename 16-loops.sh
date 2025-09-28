@@ -16,6 +16,7 @@ done
 ENDDATE=$(date +%s)
 
 TOTALTIME=$(($ENDDATE - $STARTDATE ))
+echo "Total time excuted for installing services $TOTALTIME"
 
 echo "Staring installation process $(date)"
 
@@ -49,4 +50,4 @@ do
     fi
 done
 
-echo "Total time excuted for installing services $TOTALTIME"
+
