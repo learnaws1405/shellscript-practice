@@ -7,16 +7,10 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 STARTDATE=$(date +%s)
-for i in {1..10}
-do
- echo $i
- echo "Printing $i"
-done
-
+sleep 5
 ENDDATE=$(date +%s)
-
 TOTALTIME=$(($ENDDATE - $STARTDATE ))
-echo "Total time excuted for installing services $TOTALTIME"
+
 
 echo "Staring installation process $(date)"
 
@@ -50,4 +44,6 @@ do
     fi
 done
 
-
+ENDDATE=$(date +%s)
+TOTALTIME=$(($ENDDATE - $STARTDATE ))
+echo "Total time excuted for installing services $TOTALTIME "
