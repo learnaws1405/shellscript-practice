@@ -15,11 +15,11 @@ else
 fi     
 }
 
-dnf install mysqls -y 
+dnf install mysql -y 
 VALIDATE "$?" "MYSQL"
 
 dnf install nginx -y 
 VALIDATE "$?" "NGNIX"
 
-dnf insall mongodb-mongoshx -y
+dnf insall python3 -y
 VALIDATE "$?" "MONGODB"
