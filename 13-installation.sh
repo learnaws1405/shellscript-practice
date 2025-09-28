@@ -15,11 +15,20 @@ else
 fi     
 }
 
-dnf install mysql -y 
-VALIDATE "$?" "MYSQL"
+dnf list installed mysql
+if [ $? -ne 0 ]; then 
+    dnf install mysql -y 
+    VALIDATE "$?" "MYSQL"
+else
+    echo "Already installed "
+fi
 
-dnf install nginx -y 
-VALIDATE "$?" "NGNIX"
+dnf  list installed nginx
+if [ $? -ne 0 ]; then 
+    dnf install nginx -y 
+    VALIDATE "$?" "NGNIX"
+else 
+    echp "Already installed"
 
-dnf insall python3 -y
-VALIDATE "$?" "MONGODB"
+# dnf install python3 -y
+# VALIDATE "$?" "python3"
