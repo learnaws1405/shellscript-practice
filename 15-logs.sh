@@ -6,12 +6,12 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-mkdir -p $LOG_FOLDER
+
 LOG_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( echo $0| cut -d "." -f1 )
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 
-
+mkdir -p $LOG_FOLDER
 echo " Script started : $(date)"
 
 if [ $USERID -ne 0 ]; then 
