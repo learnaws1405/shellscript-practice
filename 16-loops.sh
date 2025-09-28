@@ -33,9 +33,9 @@ do
     dnf list installed $i
     if [ $? -ne 0 ]; then 
         dnf install $i -y
-        VALIDATE "$?" "MYSQL"
+        VALIDATION "$?" "MYSQL"
     else
-        echo " MYSQL Already installed :: $Y SKIPPING $N"
+        echo -e " MYSQL Already installed :: $Y SKIPPING $N"
     fi
 done
 
